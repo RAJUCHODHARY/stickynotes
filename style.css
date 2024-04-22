@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#notes {
+  width: 90%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+.left, .right{
+    width: 50%;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+}
+.left textarea, .left button{
+    max-width: 300px;
+}
+.left textarea, .left .styling{
+    margin-bottom: 1rem;
+}
+.left textarea{
+    box-shadow: 2px 2px 3px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #000;
+}
+
+
+.right{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.right .note{
+    border-radius: 5px;
+    position: relative;
+    padding: 5px;
+    box-shadow: 2px 2px 3px 4px rgba(0,0,0,0.3);
+    min-width: 100px;
+    max-width: 150px;
+    margin: 10px;
+}
+.right .note .close{
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.div{
+    width: 200px;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3px;
+}
+
+.span2{
+    font-size: 30px;
+    color: white;
+}
+
+.span3{
+    box-shadow: 2px 3px 5px 3px white;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}

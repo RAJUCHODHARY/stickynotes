@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky Notes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="notes">
+        <div class="left">
+          <textarea
+            name=""
+            placeholder="Enter your note"
+            id="textarea1"
+            cols="30"
+            rows="10" 
+            onchange="(text)=>(text)"
+          ></textarea>
+
+          <div class="styling">
+            <label for="">Background Color</label>
+            <input id="bg" type="color"  value="#000000"/>
+            <label for="">Text Color</label>
+            <input id="text" type="color"  value="#ffffff"/>
+          </div>
+
+          <button id="btn" >add</button>
+        </div>
+        <div class="right"></div>
+      </div>
+    </div>
+
+    <script src="stickyNotes.js"></script>
+
+  </body>
+</html>
